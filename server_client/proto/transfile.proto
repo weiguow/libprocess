@@ -1,0 +1,5 @@
+message Transfile
+{
+  required string key = 1;
+  required bytes value = 2;
+}

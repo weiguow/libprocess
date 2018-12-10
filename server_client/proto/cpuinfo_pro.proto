@@ -1,0 +1,17 @@
+message AllCpuInfo {
+    optional string key_cpu = 1;
+    repeated SingleCpuInfo sci = 2;
+}
+message SingleCpuInfo {
+    optional string address = 1;
+    optional string cpuID = 2;
+    optional string coreID = 3;
+    optional string physicalID = 4;
+    optional string cpucores = 5;
+    optional string modelname = 6;
+    optional string cpuMHz = 7;
+    optional string L1dcache = 8;
+    optional string L1icache = 9;
+    optional string L2cache = 10;
+    optional string L3cache = 11;
+}

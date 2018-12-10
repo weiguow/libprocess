@@ -1,0 +1,5 @@
+message SingleInfo {
+    required string cpu = 1;
+    required string cpuID = 2;
+    required string coreID = 3;
+}

@@ -1,0 +1,4 @@
+message SlaveInfo{
+    required string  ip = 1;
+    required string port =2 ;
+}
