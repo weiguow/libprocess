@@ -132,6 +132,7 @@ if (WIN32)
   )
 endif (WIN32)
 
+#message(135 ${STOUT_LIB_DIRS})
 # Define third-party lib install directories. Used to tell the compiler
 # toolchain where to find our third party libs (e.g., -L/path/to/glog on
 # Linux).
@@ -148,6 +149,7 @@ elseif (ENABLE_LIBEVENT)
   set(PROCESS_LIB_DIRS ${PROCESS_LIB_DIRS} ${LIBEVENT_LIB_DIR})
 endif (NOT ENABLE_LIBEVENT)
 
+#message(152 ${LIBEVENT_LIB_DIR})
 if (WIN32)
   set(PROCESS_LIB_DIRS
     ${PROCESS_LIB_DIRS}
@@ -160,6 +162,9 @@ endif (WIN32)
 #########################################################################
 find_package(Threads REQUIRED)
 
+#message(164 ${HTTP_PARSER_LFLAG})
+#message(165 ${STOUT_LIBS})
+#message(166 ${LIBEV_LFLAG})
 set(PROCESS_LIBS
   ${PROCESS_LIBS}
   ${STOUT_LIBS}

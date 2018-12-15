@@ -21,4 +21,4 @@ add_subdirectory(src)
 
 # PROCESS TESTING INFRASTRUCTURE.
 #################################
-add_subdirectory(src/tests)
+#add_subdirectory(src/tests)

@@ -15,6 +15,10 @@
 #include <set>
 #include <string>
 
+#include <gmock/gmock.h>
+
+#include <gtest/gtest.h>
+
 #include <stout/foreach.hpp>
 #include <stout/fs.hpp>
 #include <stout/hashset.hpp>

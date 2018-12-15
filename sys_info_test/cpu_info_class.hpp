@@ -154,20 +154,18 @@ public:
 //        }
     }
 
-    inline std::ostream &operator<<(std::ostream &stream, const AllCpuInfo &allCpuInfo) {
-
-        cpu_collector
-        return stream << "CPU (cpu ID:" << cpu.cpuid() << ", "
-                      << "core ID:" << cpu.coreid() << ", "
-                      << "physical ID:" << cpu.physicalid() << ", "
-                      << "cpu cores:" << cpu.cpucores() << ", "
-                      << "model name:" << cpu.modelname() << ", "
-                      << "cpu MHz:" << cpu.cpumhz() << ", "
-                      << "L1d cache:" << cpu.l1dcache() << ", "
-                      << "L1i cache:" << cpu.l1icache() << ", "
-                      << "L2 cache:" << cpu.l2cache() << ", "
-                      << "L3 cache:" << cpu.l3cache()<< ")";
-    }
+//    inline std::ostream &operator<<(std::ostream &stream, const AllCpuInfo &allCpuInfo) {
+//        return stream << "CPU (cpu ID:" << cpu.cpuid() << ", "
+//                      << "core ID:" << cpu.coreid() << ", "
+//                      << "physical ID:" << cpu.physicalid() << ", "
+//                      << "cpu cores:" << cpu.cpucores() << ", "
+//                      << "model name:" << cpu.modelname() << ", "
+//                      << "cpu MHz:" << cpu.cpumhz() << ", "
+//                      << "L1d cache:" << cpu.l1dcache() << ", "
+//                      << "L1i cache:" << cpu.l1icache() << ", "
+//                      << "L2 cache:" << cpu.l2cache() << ", "
+//                      << "L3 cache:" << cpu.l3cache()<< ")";
+//    }
 
 };
 

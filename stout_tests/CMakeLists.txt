@@ -10,5 +10,5 @@ target_link_libraries(flags_tests_mine ${LIBS})
 add_executable(subcommand_tests subcommand_tests.cpp)
 target_link_libraries(subcommand_tests ${LIBS} gtest gmock glog)
 
-add_executable(subcommand_tests_mine subcommand_tests_mine.cpp flags_tests_mine.hpp)
-target_link_libraries(subcommand_tests_mine ${LIBS})
+add_executable(gflagtest gflag.cpp)
+target_link_libraries(gflagtest gflags)

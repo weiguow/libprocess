@@ -126,12 +126,12 @@ else (WIN32)
   set(SASL_LFLAG     sasl2)
 endif (WIN32)
 
-# Convenience variable for `protoc`, the Protobuf compiler.
-if (NOT WIN32)
-  set(PROTOC ${PROTOBUF_LIB_ROOT}/bin/protoc)
-else (NOT WIN32)
-  set(PROTOC ${PROTOBUF_ROOT}-build/${CMAKE_BUILD_TYPE}/protoc.exe)
-endif (NOT WIN32)
+## Convenience variable for `protoc`, the Protobuf compiler.
+#if (NOT WIN32)
+#  set(PROTOC ${PROTOBUF_LIB_ROOT}/bin/protoc)
+#else (NOT WIN32)
+#  set(PROTOC ${PROTOBUF_ROOT}-build/${CMAKE_BUILD_TYPE}/protoc.exe)
+#endif (NOT WIN32)
 
 # Configure the process library, the last of our third-party libraries.
 #######################################################################

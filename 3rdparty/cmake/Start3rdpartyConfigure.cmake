@@ -1,4 +1,4 @@
-message(${CMAKE_SOURCE_DIR})
+#message(${CMAKE_SOURCE_DIR})
 # DEFINE DIRECTORY STRUCTURE FOR THIRD-PARTY LIBS.
 ##################################################
 set(MESOS_3RDPARTY_SRC ${CMAKE_SOURCE_DIR}/3rdparty)

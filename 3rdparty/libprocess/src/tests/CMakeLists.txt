@@ -68,6 +68,7 @@ add_definitions("-DBUILD_DIR=\"${CMAKE_CURRENT_BINARY_DIR}\"")
 ###############################################################################
 include_directories(${PROCESS_TEST_INCLUDE_DIRS})
 
+#message(71 ${PROCESS_TEST_LIB_DIRS})
 # LINKING LIBRARIES BY DIRECTORY (might generate, e.g., -L/path/to/thing on
 # Linux).
 ###########################################################################

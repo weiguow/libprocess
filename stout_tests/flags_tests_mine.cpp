@@ -136,7 +136,7 @@ static int PRS(int argc, char* argv[])
     return 0;
 }
 
-int main(int argc,char* argv[]) {
+int main(int argc,char** argv) {
 
     TestFlagsBase flags;
 
@@ -148,11 +148,14 @@ int main(int argc,char* argv[]) {
         if(load.isError()){
             cout << "PLEASE INPUT THE RIGHT TYPE" << endl;
             cout << flags.usage() << endl;
-        }
-        else{
-            cout << flags.n << endl;
-            cout << flags.m << endl;
-            cout << flags.p << endl;
+        } else{
+            if( argv[1] = "--help"){
+                cout << flags.usage() << endl;
+            } else {
+                cout << flags.n << endl;
+                cout << flags.m << endl;
+                cout << flags.p << endl;
+            }
         }
 
     }
