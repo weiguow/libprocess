@@ -1,6 +1,6 @@
 include(ExternalProject)
 
-set(HWLOC_ROOT         ${CMAKE_BINARY_DIR}/3rdparty/hwloc-1.11)
+set(HWLOC_ROOT         ${CMAKE_BINARY_DIR}/thirdparty/hwloc-1.11)
 set(HWLOC_LIB_DIR      ${HWLOC_ROOT}/lib)
 set(HWLOC_INCLUDE_DIR  ${HWLOC_ROOT}/include)
 

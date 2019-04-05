@@ -30,3 +30,4 @@ function(PROTOC_COMPILE PROTO_PATH PROTO_NAME OUTPUT_PATH OUTPUT_LIBRARY)
 endfunction()
 
 include_directories(${CMAKE_BINARY_DIR}/server_client)
+include_directories(${CMAKE_BINARY_DIR}/src)
